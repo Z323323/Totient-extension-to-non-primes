@@ -5,4 +5,20 @@ Let's take $p^{k}$. We need to calc. n. of coprimes. <br>
 To solve this in the easiest way possible we can remove those we are sure are not coprimes (divisors).
 Every number multiplied by 'p' which produces $p^{k}$ is not coprime to $p^{k}$, while every other number from 1 to $p^{k}$ is coprime instead, because 'p' is prime and is only mult. by itself.<br>
 Then: $n * p = p^{k}$   ->   $n = p^{k} / p$   ->   $n = p^{k - 1}$ <br>
-Then: $p^{k-1}$ are not coprimes -> $p^{k} - p^{k-1}$ are coprimes -> $\phi(p^{k}) = p^{k} - p^{k-1}$
+Then: $p^{k-1}$ are not coprimes -> $p^{k} - p^{k-1}$ are coprimes -> $\phi(p^{k}) = p^{k} - p^{k-1}$ <br> </p>
+## Now the ¿hard? stuff
+<p>We know that multiplicativity holds for primes, but here we have $\phi(p^{k}) = p^{k} - p^{k-1}$. <br>
+$p^{k}$ is not a prime :), BUT this: <br>
+$\phi(mn) = m * n - (m + n -1)$ <br>
+$m * n - m - n + 1 = (m - 1)(n - 1)$ _ <br>
+where <br>
+$\phi(m) = m - 1$ <br>
+$\phi(n) = n - 1$ <br>
+can be re-applied like so:
+$\phi(nn) = n * n - (n + n -1)$ <br>
+$n * n - n - n + 1 = (n - 1)(n - 1)$ _ <br>
+where <br>
+$\phi(n) = n - 1$ <br>
+We can repeat this process any number of times to get any power of our prime, now, 
+
+</p>
