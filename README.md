@@ -6,7 +6,9 @@ To solve this in the easiest way possible we can remove those we are sure are no
 Every number multiplied by 'p' which produces $p^{k}$ is not coprime to $p^{k}$, while every other number from 1 to $p^{k}$ is coprime instead, because 'p' is prime and is only mult. by itself.<br>
 Then: $n * p = p^{k}$   ->   $n = p^{k} / p$   ->   $n = p^{k - 1}$ <br>
 Then: $p^{k-1}$ are not coprimes -> $p^{k} - p^{k-1}$ are coprimes -> $\phi(p^{k}) = p^{k} - p^{k-1}$ <br> </p>
+
 ## Now the ¿hard? stuff
+
 <p>We know that multiplicativity holds for primes, but here we have $\phi(p^{k}) = p^{k} - p^{k-1}$. <br>
 $p^{k}$ is not a prime :), BUT this: <br>
 $\phi(mn) = m * n - (m + n -1)$ <br>
