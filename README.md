@@ -13,7 +13,7 @@ Then: $p^{k-1}$ are not coprimes -> $p^{k} - p^{k-1}$ are coprimes -> $\phi(p^{k
 If we manage to demonstrate that multiplicativity holds for non-primes (powers of primes actually) we can multiply $\phi(p^{k})$ for every p_i, k_i and derive the property for non-primes. This will mean being able to calculate Totient for every integer and being sure the calculation is correct. <br>
 </p>
 
-## Example: $\phi(2^{20}5^{15})$ (tried to make this as simple as possible)
+## Example: $\phi(2^{20}5^{15})$
 <p>Let's look at the new scheme for this example. Making this has helped me a lot in the process. <br>
 
 ![Scheme](Scheme4.png)
