@@ -14,6 +14,20 @@ If we manage to demonstrate that multiplicativity holds for non-primes (powers o
 </p>
 
 ## Example: $\phi(2^{20}5^{15})$ (tried to make this as simple as possible)
-Let's look at the new scheme for this example. Making this has helped me a lot in the process.
+<p>Let's look at the new scheme for this example. Making this has helped me a lot in the process. <br>
+
+![Scheme](Scheme4.png)
+
+<br> Here becomes clear that removing co-factors will be harder. The previous reasoning scheme holds but now we will have to remove all the columns and lines which are powers of '2' and '5', and for every line and column removed we will need to remove 1 element considered twice and so intersections will be a huge? problem. So we will need to remove for ex: 5^15(2) column, which is composed of 5^15 elements which share the '2' factor, the same goes for 2^20(5) line, here there will be 2^20 elements to remove because they share the '5' factor. <br>
+Let's try to make this as simple as possible (otherwise you alr. know what would happen :'D).
+We know that we will have to remove $2^{20} / 2$ columns + $5^{15} / 5$ lines in total, this means: $(2^{20} / 2) * 5^{15} + (5^{15} / 5) * 2^{20}$ and since we will need to sub '1' for every intersection, we will need to sub $5^{15} / 5 * 2^{20} / 2$. Let's write this whole formula: <br>
+$\phi(2^{20}5^{15}) = 5^{15} × 2^{20} − ((2^{19} × 5^{15}) + (5^{14} × 2^{20}) − 5^{14} × 2^{19})$ <br></p>
+
+## Formalization
+<p>$\phi(x^{k}y^{z}) = x^{k}y^{z} - x^{k-1}y^{z} - x^{k}y^{z-1} + x^{k-1}y^{z-1}$<br>
+$x^{k}y^{z} - x^{k-1}y^{z} - x^{k}y^{z-1} + x^{k-1}y^{z-1} = (x^{k} - x^{k-1})(y^{z} - y^{z-1})$<br>
+Where:<br>
+$\phi(x^{k}) = x^{k} - x^{k-1}$<br>
+$\phi(y^{z}) = y^{z} - y^{z-1}$</p>
 
 
