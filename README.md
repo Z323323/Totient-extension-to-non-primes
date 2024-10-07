@@ -30,4 +30,14 @@ Where:<br>
 $\phi(x^{k}) = x^{k} - x^{k-1}$<br>
 $\phi(y^{z}) = y^{z} - y^{z-1}$</p>
 
+## Refinition of the scheme ensuring formalization is unbreakable
+<p>The scheme above is a little bit messy, and looks like it's not following a structured reasoning, this time is going to be harder to make it structured and perform swaps and preserve formalization.
+Structured scheme: <br>
+
+
+
+Looking at this scheme it's easy to see that $2^{19} × 5^{15}$ columns are removable. It's not the same for $5^{14} × 2^{20}$. To remove the latter we will need swaps. Of course this time it won't be possible to show the complete picture and the reasoning will need to abstract the image representation. <br>
+Luckily it turns out that the reasoning is quite trivial. We already know that there are $5^{14}$ elements among lines to be removed. The multiplication by $2^{20}$ is quite trivial too: all these cofactors are mutiplied by all numbers from 1 to $2^{20}$ and the products are obviously elements which share '5' co-factor and then they all need to be removed. Then we can easily imagine swaps between lines which preserve the formalization. $5^{14} × 2^{19}$ is the last term we need to match the formalization and is a consequence of this whole reasoning (intersections).
+
+
 
