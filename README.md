@@ -7,7 +7,7 @@ Every number multiplied by 'p' which produces $p^{k}$ is not coprime to $p^{k}$,
 Then: $n * p = p^{k}$   ->   $n = p^{k} / p$   ->   $n = p^{k - 1}$ <br>
 Then: $p^{k-1}$ are not coprimes -> $p^{k} - p^{k-1}$ are coprimes -> $\phi(p^{k}) = p^{k} - p^{k-1}$ <br> </p>
 
-## Now the ¿hard? (yes it is) stuff
+## Now the ¿hard? stuff
 
 <p>We know that multiplicativity holds for primes, but here we have $\phi(p^{k}) = p^{k} - p^{k-1}$ where $p^{k}$ is not a prime. <br>
 If we manage to demonstrate that multiplicativity holds for non-primes (powers of primes actually) we can multiply $\phi(p^{k})$ for every p_i, k_i and derive the property for non-primes. This will mean being able to calculate Totient for every integer and being sure the calculation is correct. <br>
