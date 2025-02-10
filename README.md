@@ -55,12 +55,12 @@ If we manage to prove that multiplicativity holds for powers of primes we can mu
 
 <p>
   
- ![Scheme](Scheme_fixed.png) 
+ ![Scheme](Scheme_fixed.png)
+ 
+ I give you a quick reminder from the previous article regarding Totient multiplicativity, we are basically trying to build a structured multiplication of elements where we will have to remove every multiple of $2$ and $5$. To get the most out of the structure we are trying to collapse each element sharing $5$ and/or $2$ cofactors on the same lines/columns, then remove them and add $1$ for every intersection because we will basically remove those element twice if we don't do so.
+ We know there are $2^{19}$ cofactors of $2^{20}$ and $5^{14}$ cofactors of $5^{15}$. It's simple from the image to see that the colmns are made of $5^{15}$ elements and the lines of $2^{20}$ elements. It's also quite simple to see that we will have to remove half of the columns because are multiples of $2$, thus $2^{2
 
-It's quite clear that removing co-factors will be harder. Now we will have to remove all the columns and lines which are mults of $2$ and $5$, and for every line and column removed we will need to remove intersections. Looking at this scheme it's easy to see that $2^{19} × 5^{15}$ columns are removable. It's not the same for $5^{14} × 2^{20}$. To remove the latter we will need swaps. Of course this time it won't be possible to show the complete picture and the reasoning will need to abstract the image representation. <br>
-We already know that there are $5^{14}$ elements among lines to be removed. The multiplication by $2^{20}$ is not really trivial too: all these cofactors are mutiplied by all numbers from $1$ to $2^{20}$ and the products are obviously elements which share $5$ co-factor and then they all need to be removed. Then we can imagine swaps between lines which preserve the formalization. $5^{14} × 2^{19}$ is the last term we need to match the formalization and is a consequence of this whole reasoning (intersections).
-
-We know that we will have to remove $2^{20} / 2$ columns $+$ $5^{15} / 5$ lines in total, this means
+We know that we will have to remove $2^{19}$ columns $+$ $5^{15} / 5$ lines in total, this means
 
 $(2^{20} / 2) * 5^{15} + (5^{15} / 5) * 2^{20}$ 
 
