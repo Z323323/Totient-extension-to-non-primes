@@ -61,6 +61,8 @@ If we manage to prove that multiplicativity holds for powers of primes we can mu
 
 $\phi(2^{20}5^{15}) = 5^{15}2^{20} − 2^{19}5^{15} - 5^{14}2^{20} + 5^{14}2^{19}$
 
+Since the structure above is formalizable for any pair of powers of primes, and the reasoning behind too, the formalization follows.
+
 </p>
 
 ## Formalization
