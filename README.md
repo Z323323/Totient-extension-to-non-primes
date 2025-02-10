@@ -57,16 +57,9 @@ If we manage to prove that multiplicativity holds for powers of primes we can mu
   
  ![Scheme](Scheme_fixed.png)
  
- I give you a quick reminder from the previous article regarding Totient multiplicativity, we are basically trying to build a structured multiplication of elements where we will have to remove every multiple of $2$ and $5$. To get the most out of the structure we are trying to collapse each element sharing $5$ and/or $2$ cofactors on the same lines/columns, then remove them and add $1$ for every intersection because we will basically remove those element twice if we don't do so.
- We know there are $2^{19}$ cofactors of $2^{20}$ and $5^{14}$ cofactors of $5^{15}$. It's simple from the image to see that the colmns are made of $5^{15}$ elements and the lines of $2^{20}$ elements. It's also quite simple to see that we will have to remove half of the columns because are multiples of $2$, thus $2^{2
+ I give you a quick reminder from the previous article regarding Totient multiplicativity, we are basically trying to build a structured multiplication of elements where we will have to remove every multiple of $2$ and $5$. To get the most out of the structure we are trying to collapse each element sharing $5$ and/or $2$ cofactors on the same lines/columns, then remove them and add $1$ for every intersection because we will basically remove those element twice if we don't do so. It's simple from the image to see that the columns are made of $5^{15}$ elements and the lines of $2^{20}$ elements. It's also quite simple to see that we will have to remove half of the columns because are multiples of $2$, thus $2^{19}5^{15}$ elements. Now, to collapse multiples of $5$ we will need swaps. We know there are $5^{14}$ multiples of $5$ (we just saw that $\phi(5^{15}) = 5^{15} - 5^{14}$ holds), and we know these are multiplied by $2^{20}$ elements, and this means that we can swap such elements to build $5^{14}$ lines of $2^{20}$ elements. Finally we will add intersections, and since we are considering $2^{19}$ columns and $5^{14}$ lines there will be $2^{19} \cdot 5^{14}$ intersections. Resuming our reasoning we have
 
-We know that we will have to remove $2^{19}$ columns $+$ $5^{15} / 5$ lines in total, this means
-
-$(2^{20} / 2) * 5^{15} + (5^{15} / 5) * 2^{20}$ 
-
-and since we will need to sub $1$ for every intersection, we will need to sub $5^{15} / 5 * 2^{20} / 2$, hence obtaining
-
-$\phi(2^{20}5^{15}) = 5^{15} × 2^{20} − ((2^{19} × 5^{15}) + (5^{14} × 2^{20}) − 5^{14} × 2^{19})$
+$\phi(2^{20}5^{15}) = 5^{15}2^{20} − 2^{19}5^{15} - 5^{14}2^{20} + 5^{14}2^{19})$
 
 </p>
 
